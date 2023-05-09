@@ -1,0 +1,15 @@
+# Code and Virtual Environment storage settings
+# Settings can be overwritten by setting CRVENV_<variablename>
+
+# Main storage directory
+STORAGEDIR="${CRVENV_STORAGEDIR:-"${HOME}/Storage/pycharm"}"
+# Location where PyCharm synced code will live
+PROJECTSDIR="${CRVENV_PROJECTSDIR:-"${STORAGEDIR}/projects"}"
+# Location where virtual environments will live
+VENVSDIR="${CRVENV_VENVSDIR:-"${STORAGEDIR}/venvs"}"
+
+# Python binary to use when making virtualenvs
+PYTHONBIN="${CRVENV_PYTHONBIN:-"/usr/bin/python3"}"
+
+# Virtual environment command
+VENVCMD="${CRVENV_VENVCMD:-"venv"}"
